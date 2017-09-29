@@ -5,7 +5,7 @@ class Polyline(object):
     #TODO: points, edges, invert, size, centroid/cog, convex/concave, box
     def __init__(self, xy=np.zeros((0, 2))):
         self.points = xy
-        pass
+        self.n_points = self.points.__len__()
 
     def append(self, xy):
         self.insert(xy, -1)
