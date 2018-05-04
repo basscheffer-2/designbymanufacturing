@@ -1,0 +1,9 @@
+{
+  "layer-height":0.2,
+  "max-height":100,
+  "max-width":100,
+  "smoothness": 0.7,
+  "max-angle": 45,
+  "min-base-width": 30,
+  "noise":0.1
+}

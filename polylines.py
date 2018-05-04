@@ -19,8 +19,12 @@ class Polyline(object):
     def rotate(self):
         pass
 
-    def to_vertices(self, Z=None):
-        pass
+    def to_vertices(self, z):
+        za = np.expand_dims(np.full(self.n_points, fill_value=z), axis=1)
+
+        self.points = np.hstack((self.points, za))
+
+        return self.points
 
 class Polygon(Polyline):
 
